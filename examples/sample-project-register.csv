@@ -1,0 +1,4 @@
+record_id,type,title,owner,status,next_review,impact,action
+RSK-001,risk,外部依存の確認遅延,PM,open,2026-11-05,日程,確認会を設定する
+ISS-001,issue,要件確認会の日程未確定,PMO,open,2026-10-30,日程,候補日を提示する
+DEC-001,decision,段階的な利用開始を採用,スポンサー,decided,2026-10-28,範囲,移行計画を更新する
