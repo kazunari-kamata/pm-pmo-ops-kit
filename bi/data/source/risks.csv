@@ -1,0 +1,4 @@
+risk_id,project_id,title,registered_date,due_date,closed_date,severity,probability,impact,status
+RSK-001,PJ-001,連携元データの品質不足,2026-03-02,2026-06-07,,高,高,日程,オープン
+RSK-002,PJ-002,利用部門の確認遅延,2026-02-10,2026-03-07,2026-03-05,中,中,品質,解決済み
+RSK-003,PJ-003,指標の解釈差異,2026-04-10,2026-06-14,,高,中,範囲,対応中

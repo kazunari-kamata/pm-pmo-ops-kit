@@ -5,7 +5,6 @@ from __future__ import annotations
 
 import argparse
 
-
 CHECKLISTS = {
     "initiation": [
         "目的、成功指標、対象外をプロジェクト憲章に記録した",

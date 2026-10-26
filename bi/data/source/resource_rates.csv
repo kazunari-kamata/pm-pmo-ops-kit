@@ -1,0 +1,5 @@
+resource_id,effective_start_date,effective_end_date,planned_hourly_rate,actual_hourly_rate,currency
+RES-001,2026-01-01,,8000,8200,JPY
+RES-002,2026-01-01,2026-04-30,9000,9100,JPY
+RES-002,2026-05-01,,9500,9600,JPY
+RES-003,2026-01-01,,7000,7000,JPY

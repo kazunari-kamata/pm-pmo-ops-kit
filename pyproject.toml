@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pm-pmo-ops-kit"
+version = "0.1.0"
+description = "PM・PMO向けテンプレートとローカルBIサンプル"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+bi = [
+  "duckdb>=1.1,<2",
+  "plotly>=5.24,<7",
+  "streamlit>=1.40,<2",
+]
+dev = [
+  "pytest>=8,<10",
+  "ruff>=0.8,<1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "bi/tests"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+extend-exclude = [".jj"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.setuptools.packages.find]
+include = ["bi*"]
