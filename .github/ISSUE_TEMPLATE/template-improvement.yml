@@ -1,0 +1,32 @@
+name: Template improvement
+description: テンプレートの追加または改善を提案します
+title: "[Template]: "
+labels:
+  - type/template
+body:
+  - type: textarea
+    id: purpose
+    attributes:
+      label: 目的
+      description: 解決したい業務上の課題を記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 提案内容
+      description: 対象工程、追加・変更する項目、完了条件を記載してください。
+      value: |
+        - 対象工程:
+        - 追加・変更:
+        - 完了条件:
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: 公開時の注意
+      description: 実在の案件情報を含めないよう確認してください。
+      value: |
+        - 実在する会社名、顧客名、個人名、メールアドレスを含めない。
+        - IPアドレス、ドメイン、社内パスを含めない。
