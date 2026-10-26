@@ -27,3 +27,7 @@ def test_templates_validate() -> None:
     result = run_script("scripts/validate_templates.py", "templates")
     assert result.returncode == 0
     assert "validated" in result.stdout
+
+
+def test_kpi_dashboard_template_exists() -> None:
+    assert (ROOT / "templates" / "project-kpi-dashboard.md").is_file()
