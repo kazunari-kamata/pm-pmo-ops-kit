@@ -16,9 +16,15 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install test dependencies
-        run: python -m pip install pytest
+      - name: Install BI and test dependencies
+        run: python -m pip install -e ".[bi,dev]"
       - name: Run tests
         run: python -m pytest
+      - name: Run Ruff
+        run: |
+          ruff check .
+          ruff format --check .
       - name: Validate templates
         run: python scripts/validate_templates.py templates
+      - name: Build analytics database
+        run: python -m bi.etl.run

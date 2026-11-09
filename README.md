@@ -25,6 +25,27 @@ PM・PMOが要件定義からプロジェクト終結までに使う文書、会
 
 あわせて、予算・リソースの基準線と実績、完了後の便益・成果指標を管理するテンプレートを含みます。
 
+## BI分析・可視化
+
+架空のプロジェクト基本情報、WBS・進捗、マイルストーン、リスク・課題、変更要求、予算・実績、リソース・工数、役割別時間単価を対象に、品質検証からDuckDBへの格納、分析SQL、Streamlitダッシュボードまでをローカルで再現できます。既存テンプレートや既存スクリプトを置き換えるものではなく、`bi/`配下に独立して追加しています。
+
+```sh
+python -m pip install -e ".[bi,dev]"
+python -m bi.etl.run
+python -m streamlit run bi/app/dashboard.py
+```
+
+ダッシュボードはエグゼクティブサマリー、進捗分析、予算・工数分析、リスク・課題分析の4画面で構成され、プロジェクト・期間の絞り込み、役割別単価を適用した人件費の確認、KPI定義の確認、表のCSV出力に対応します。
+
+- [BIアーキテクチャ](docs/bi-architecture.md)
+- [データモデル定義](docs/bi-data-model.md)
+- [KPI定義書](docs/bi-kpi-definition.md)
+- [ETL設計書](docs/bi-etl-design.md)
+- [データ品質ルール](docs/bi-data-quality-rules.md)
+- [ダッシュボード操作ガイド](docs/bi-dashboard-guide.md)
+- [ローカル環境構築手順](docs/bi-local-setup.md)
+- [BIエンジニアとしての設計判断](docs/bi-design-decisions.md)
+
 ## フロー図・工程イメージ
 
 - [プロジェクトフローとガントチャート](docs/project-flow.md): 工程ゲート、継続的な管理活動、標準的な進行イメージ
@@ -56,6 +77,8 @@ python scripts/validate_templates.py templates
 
 ```sh
 python -m pytest
+ruff check .
+ruff format --check .
 ```
 
 ## 運用上の注意

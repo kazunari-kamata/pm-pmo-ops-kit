@@ -1,0 +1,4 @@
+project_id,project_name,portfolio,status,planned_start_date,planned_end_date,actual_start_date,actual_end_date,project_manager
+PJ-001,業務可視化基盤整備,業務改善,進行中,2026-01-06,2026-06-30,2026-01-06,,PM担当A
+PJ-002,申請手続き刷新,業務改善,完了,2026-02-02,2026-05-29,2026-02-02,2026-05-27,PM担当B
+PJ-003,分析レポート標準化,データ活用,進行中,2026-03-02,2026-07-31,2026-03-02,,PM担当C

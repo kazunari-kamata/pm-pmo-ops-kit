@@ -1,0 +1,4 @@
+change_id,project_id,title,requested_date,decision_date,status,cost_impact_amount,schedule_impact_days
+CHG-001,PJ-001,連携対象項目の追加,2026-04-18,,評価中,180000,10
+CHG-002,PJ-002,帳票項目の補足,2026-03-18,2026-03-21,承認済み,50000,0
+CHG-003,PJ-003,比較軸の追加,2026-05-15,,評価中,80000,5

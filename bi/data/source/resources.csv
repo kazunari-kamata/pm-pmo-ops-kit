@@ -1,0 +1,4 @@
+resource_id,resource_name,role
+RES-001,データ設計担当,データエンジニア
+RES-002,分析実装担当,BIエンジニア
+RES-003,運営管理担当,PMO
